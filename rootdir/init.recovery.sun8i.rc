@@ -1,0 +1,15 @@
+on init
+
+    mkdir /storage/sdcard0 0700 root root
+    mkdir /storage/sdcard1 0700 root root
+    symlink /storage/sdcard1 /sd-ext
+
+    insmod /nand.ko
+    insmod /disp.ko
+    insmod /lcd.ko
+    insmod /sunxi-keyboard.ko
+    insmod /gslX680.ko
+    insmod /gt818_ts.ko
+    insmod /sw-device.ko
+    
+
