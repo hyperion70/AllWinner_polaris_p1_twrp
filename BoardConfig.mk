@@ -62,6 +62,6 @@ BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 BOARD_UMS_2ND_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun1/file"
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/twrp.fstab
 BOARD_HAS_NO_SELECT_BUTTON := true
-# TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-# TW_MAX_BRIGHTNESS := 255
+TW_BRIGHTNESS_PATH := /sys/class/disp/disp/attr/lcd_bl
+TW_MAX_BRIGHTNESS := 255
 
